@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: rgb(137, 120, 120);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .goods {
+
+            width: 310px;
+            height: 480px;
+            background-color: #fff;
+        }
+
+
+
+        .phone {
+            float: left;
+            width: 290px;
+            height: 290px;
+            background-color: blue;
+            margin: 10px 10px;
+
+        }
+
+        .phone img {
+            width: 100%;
+            height: 100%;
+        }
+
+        h4 {
+            display: inline-block;
+            width: 280px;
+            height: 20px;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 400;
+            color: #666;
+            margin: 10px 10px;
+
+        }
+
+        .price {
+
+            width: 280px;
+            height: 20px;
+            margin: 10px 10px;
+
+        }
+
+        .price>* {
+            float: left;
+            text-align: center;
+            line-height: 30px;
+
+
+        }
+
+        .price .now {
+            color: red;
+            font-weight: 400;
+            font-size: 20px;
+
+        }
+
+        .price .before {
+            line-height: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 12px;
+            text-decoration: line-through;
+            color: #a3a1a1;
+        }
+
+        .prog {
+            float: left;
+            width: 280px;
+            height: 20px;
+            font-size: 10px;
+            margin-top: 5px;
+            margin-left: 10px;
+
+        }
+
+        .prog .bar {
+            display: inline-block;
+            position: relative;
+            width: 130px;
+            height: 14px;
+            /* background-color: red; */
+            border: 1px solid red;
+            border-radius: 7px;
+        }
+
+        .bar .bar_in {
+            position: absolute;
+            width: 50%;
+            height: 13px;
+            border-radius: 7px;
+            background-color: red;
+            transition: all 1s;
+        }
+
+        .bar:hover .bar_in {
+            width: 100%;
+
+        }
+
+        .goods a {
+
+            display: inline-block;
+            width: 290px;
+            height: 50px;
+            background-color: #B1191A;
+            margin: 1px 10px;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .prog span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="goods">
+        <div class="phone">
+            <img src="images/mobile.jpg" alt="">
+        </div>
+        <h4>Apple苹果iPhone 6s Plus ( A1699 ) 32G金色移动联通电信4G手机</h4>
+        <div class="price">
+            <div class="now">￥6088</div>
+            <div class="before">￥6988</div>
+        </div>
+        <div class="prog">
+            已售87%
+            <div class="bar">
+                <div class="bar_in"></div>
+            </div>
+            剩余<span>29</span>件
+        </div>
+        <a href="#">立即抢购</a>
+
+    </div>
+    </div>
+</body>
+
+</html>

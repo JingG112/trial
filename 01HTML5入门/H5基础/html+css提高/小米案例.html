@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 总结 */
+        /* 1、盒子距离的计算 */
+        /* 2、定位的使用 */
+        /* 3、盒子大小的设置 */
+        /* 4、盒子的显示和隐藏 */
+        /* 5、定位距离的判断，left是距离左边的距离 */
+        /* 6、子绝父相 */
+
+        /* 主盒子设置 */
+        .mi {
+            position: relative;
+            width: 49px;
+            height: 49px;
+            margin: 50px auto;
+            /* MI字居中 */
+            background-color: #FF6700;
+            /* MI的背景颜色 */
+        }
+
+        /* 给MI的儿子设置为绝对定位 */
+        .mi>div {
+            position: absolute;
+        }
+
+
+        /* HOME字设置 */
+        .mi .mi_home {
+            left: -49px;
+            width: 100%;
+            transition: all 1s;
+        }
+
+        /* MI字设置 */
+        .mi .mi_pic {
+            left: 0;
+            width: 100%;
+            transition: all 1s;
+            /* 1s后向右移动隐藏 */
+            visibility: visible;
+        }
+
+        /* 鼠标移动，图标更换 */
+        .mi:hover .mi_pic {
+            left: 49px;
+            visibility: hidden;
+
+        }
+
+        .mi:hover .mi_home {
+            left: 0;
+            visibility: visible;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mi">
+        <div class="mi_pic">
+            <img src="images/mi-logo.png" alt="">
+        </div>
+        <div class="mi_home">
+            <img src="images/mi-home.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

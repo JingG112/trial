@@ -1,0 +1,229 @@
+/* 登录页面制作 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 82px;
+}
+
+.main {
+    position: relative;
+    height: 486px;
+    background-color: pink;
+    background: url(../images/loginbg.png) repeat-x 0 0;
+}
+
+.before {
+    position: absolute;
+    left: 0%;
+    top: 82px;
+    /* margin-left: -180px; */
+    width: calc((100%-1200px)/2);
+    height: 486px;
+    background-color: pink;
+    background: url(../images/loginbg.png) repeat -720px 0;
+}
+
+.after {
+    position: absolute;
+    left: 50%;
+    top: 82px;
+    width: calc((100%-1200px)/2);
+    height: 486px;
+    margin-left: 600px;
+    /* background-color: pink; */
+    background: url(../images/loginbg.png) repeat -720px 0;
+}
+
+.main .login {
+    position: absolute;
+    top: 62px;
+    left: 50%;
+    width: 380px;
+    height: 360px;
+    background-color: #fff;
+    margin-left: 106px;
+}
+
+.main_width {
+    width: 303px;
+    margin: 0 auto;
+}
+
+.main .text {
+    height: 20px;
+    /* background-color: pink; */
+    text-align: center;
+    margin-top: 23px;
+}
+
+.main .text span {
+    font-size: 18px;
+    line-height: 20px;
+
+}
+
+.main .text .saoma {
+    float: left;
+}
+
+.main .text .shuxian {
+    font-weight: 400;
+    color: #ededed;
+}
+
+.main .text .acun_login {
+    float: right;
+    color: #c81623;
+}
+
+.main .textarea {
+    width: 302px;
+    height: 26px;
+    resize: none;
+    background-color: #fffdee;
+    line-height: 26px;
+    padding-left: 10px;
+    border: 1px solid #f5eecf;
+    margin-top: 12px;
+}
+
+.account,
+.password {
+    height: 36px;
+    /* border-bottom-color: pink; */
+    border: 1px solid #bbbaba;
+}
+
+.account {
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+.account:hover,
+.password:hover {
+    border-color: #3aa2e4;
+}
+
+.account .txprc {
+    float: left;
+
+}
+
+.password .mimaprc {
+    float: left;
+}
+
+.account input,
+.password input {
+    height: 34px;
+    padding-left: 11px;
+}
+
+.account .txprc img,
+.password .mimaprc img {
+    height: 34px;
+}
+
+.logorfor {
+    height: 14px;
+    margin-top: 20px;
+}
+
+.logorfor .left1 {
+    float: left;
+    height: 14px;
+}
+
+.logorfor .left1 input {
+    float: left;
+    color: #b3b3b3;
+
+
+}
+
+.logorfor .left2 {
+    float: left;
+    color: #b3b3b3;
+    font-size: 12px;
+    line-height: 14px;
+
+}
+
+.logorfor .right1 {
+    float: right;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+    vertical-align: bottom;
+    padding-bottom: 0;
+}
+
+.loginbt {
+    height: 41px;
+    background-color: #c81623;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 41px;
+    color: #fff;
+}
+
+.icon {
+    height: 34px;
+    /* background-color: pink; */
+    margin-top: 31px;
+}
+
+.icon ul li {
+    float: left;
+    width: 34px;
+    height: 34px;
+    margin-left: 18px;
+    /* background-color: skyblue; */
+}
+
+.icon ul a:first-child li {
+    background: url(../images/regetype.png) no-repeat -19px -7px;
+}
+
+.icon ul a:nth-child(2) li {
+    background: url(../images/regetype.png) no-repeat -71px -7px;
+}
+
+.icon ul a:nth-child(3) li {
+    background: url(../images/regetype.png) no-repeat -122px -7px;
+}
+
+.icon ul a:nth-child(4) li {
+    background: url(../images/regetype.png) no-repeat -174px -7px;
+}
+
+.icon ul i {
+    float: right;
+    font-size: 14px;
+    color: #1474af;
+    line-height: 34px;
+    margin-right: 11px;
+}
+
+
+/* 底部页面样式 */
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+.links a {
+    margin: 0 3px;
+}
+
+.copyright {
+    line-height: 20px;
+}

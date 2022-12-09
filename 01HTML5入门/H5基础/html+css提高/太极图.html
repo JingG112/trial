@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(160, 158, 158);
+        }
+
+        .left,
+        .right {
+            /* position: relative; */
+            float: left;
+            width: 100px;
+            height: 200px;
+        }
+
+        .box {
+            position: relative;
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        .left {
+            background-color: black;
+            border-bottom-left-radius: 100px;
+            border-top-left-radius: 100px;
+        }
+
+        .right {
+
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            background-color: #fff;
+
+        }
+
+        .cycle1 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 100px;
+            top: 50px;
+            background-color: #fff;
+            margin-left: -5px;
+
+        }
+
+        .cycle2 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 100px;
+            top: 150px;
+            background-color: black;
+            margin-left: -5px;
+
+        }
+
+        .cycle1,
+        .cycle2 {
+            border-radius: 5px;
+            z-index: 2;
+        }
+
+        .taijiyuan1 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50px;
+            top: 0;
+            background-color: black;
+            border-radius: 50px;
+        }
+
+        .taijiyuan2 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50px;
+            top: 100px;
+            background-color: #fff;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="cycle1"></div>
+        <div class="cycle2"></div>
+        <div class="taijiyuan1"></div>
+        <div class="taijiyuan2"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 继承性 */
+        /* div {
+            color: pink;
+            font-size: 14px;
+        } */
+
+        body {
+            color: pink;
+            /* font: 12px/24px 'Microsoft YaHei'; */
+            font: 12px/1.5 'Microsoft YaHei';
+        }
+
+        div {
+            /* 子元素继承了父元素body的行高1.5 */
+            /* 当前元素文字的行高 */
+            font-size: 14px;
+        }
+
+        p {
+            /* 行高=1.5*16=24px */
+            font-size: 16px;
+        }
+
+        /* 1.5*12=18px */
+        /* li没指定 基础父亲body12px */
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- <p>龙生龙，风生风，老鼠的孩子会打动</p> -->
+        龙生龙，风生风，老鼠的孩子会打动
+    </div>
+    <p>粉红色的回忆</p>
+    <ul>
+        <li>我没有指定文字大小</li>
+    </ul>
+</body>
+
+</html>

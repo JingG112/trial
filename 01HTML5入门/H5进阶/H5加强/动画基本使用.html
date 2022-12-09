@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 2、使用动画 */
+            /* 动画名称 */
+            animation-name: move;
+            /* 持续时间 */
+            animation-duration: 1s;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: move 2s linear 0s 1 alternate forwards;
+            /* name duration一定写 */
+        }
+
+        /* 1、定义动画 */
+        @keyframes move {
+
+            /* 开始状态 */
+            0% {
+                transform: translate(0);
+            }
+
+            /* 结束状态 */
+            100% {
+                transform: translate(1000px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
