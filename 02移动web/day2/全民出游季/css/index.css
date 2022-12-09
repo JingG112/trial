@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url(./../images/f1_1.jpg) no-repeat center 0;
+
+    /* 缩放背景图 */
+
+    /* 图片等比例缩放, 当宽度或高度和盒子尺寸相等, 图片就不再缩放 */
+    /* background-size: contain; */
+
+    /* 图片等比例缩放, 图片完全覆盖到整个盒子, 可能会导致图片显示不全 */
+    background-size: cover;
+}
+
+/* 
+1. img 引入图片, 控制位置
+2. 定义动画,使用动画
+*/
+
+.cloud img,
+.qiqiu img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.cloud img:nth-child(1) {
+    margin-left: -300px;
+    top: 20px;
+    animation: cloud 1s infinite alternate;
+}
+
+.cloud img:nth-child(2) {
+    margin-left: 400px;
+    top: 100px;
+    animation: cloud 1s infinite alternate 0.2s;
+}
+
+.cloud img:nth-child(3) {
+    margin-left: -550px;
+    top: 200px;
+    animation: cloud 1s infinite alternate 0.4s;
+}
+
+/* 云彩动画 */
+@keyframes cloud {
+    to {
+        transform: translateX(20px);
+    }
+}
+
+.qiqiu img {
+    top: 115px;
+    margin-left: -286px;
+    animation: qiqiu 2s infinite alternate;
+}
+
+/* 气球动画 */
+@keyframes qiqiu {
+    to {
+        transform: translateY(30px);
+    }
+}
+
+/* 文字动画 */
+.font img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: font 1s;
+
+}
+
+/* 因为transform是复合属性，所以要重写一遍 */
+@keyframes font {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    20% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    40% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+
+    }
+}
+
+/* 跳动文字 */
+.junm-text img {
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    width: 100px;
+
+}
+
+.junm-text img:nth-child(1) {
+    margin-left: -368px;
+    animation: jump 1s infinite alternate 0.3s;
+}
+
+.junm-text img:nth-child(2) {
+    margin-left: -179px;
+    animation: jump 1s infinite alternate 0.1s;
+}
+
+.junm-text img:nth-child(3) {
+    margin-left: 32px;
+    animation: jump 1s infinite alternate 0s;
+}
+
+.junm-text img:nth-child(4) {
+    margin-left: 219px;
+    animation: jump 1s infinite alternate 0.4s;
+}
+
+@keyframes jump {
+    to {
+        transform: translateY(-30px);
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let arr = [2, 2, 4, 7, 4, 12, 54, 12, 9, 5, 16]
+        let temp = 0
+        // 1.外层循环控制 趟数 循环次数 长度-1次 arr.length-1
+        for (let i = 0; i < arr.length - 1; i++) {
+            // 2.内层循环次数 交换的次数  长度-i-1  arr.length-i-1
+            for (let j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    temp = arr[j]
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
+                }
+            }
+        }
+        document.write(arr)
+
+    </script>
+</body>
+
+</html>

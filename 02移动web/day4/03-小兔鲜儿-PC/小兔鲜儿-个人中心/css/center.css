@@ -1,0 +1,169 @@
+.xtx-body {
+    background-color: #f6f6f6;
+    padding: 30px 0 85px;
+}
+
+.xtx-body .wrapper {
+    display: flex;
+}
+
+/* 侧边栏部分 */
+.xtx-body .aside {
+    width: 227px;
+    min-height: 500px;
+    margin-right: 18px;
+    background-color: pink;
+}
+
+.main {
+    flex: 1;
+    /* background-color: skyblue; */
+
+}
+
+/* 顶部导航区域 */
+.overview {
+    display: flex;
+    justify-content: space-evenly;
+    height: 132px;
+    background-color: #fff;
+    padding: 20px 0;
+    margin-bottom: 18px;
+}
+
+/* 给div display flex 让a flex居中 */
+
+.overview div {
+    flex: 1;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    text-align: center;
+}
+
+.overview div a:nth-child(3) {
+    border-right: 1px solid #f4f4f4;
+}
+
+.overview div a {
+    flex: 1;
+}
+
+.overview div a img {
+    width: 25px;
+    margin-bottom: 8px;
+}
+
+.overview div a p {
+    font-size: 16px;
+    color: #333;
+}
+
+.overview div a span {
+    font-size: 25px;
+    color: #e05e30;
+}
+
+.overview div a p:hover {
+    color: #e05e30;
+}
+
+/* 把overview 里面div第三个a里面的img的宽度设置为18像素 */
+.overview div a:nth-child(3) img {
+    width: 18px;
+}
+
+/* 公共样式 */
+.pannel {
+    padding: 28px 18px;
+    background-color: #fff;
+}
+
+.pannel-title {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.pannel-title h4 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.pannel-title a {
+    font-size: 16px;
+    color: #999999;
+    margin-top: 8px;
+}
+
+.orders ul li {
+    display: flex;
+    height: 137px;
+    border: 1px solid #f4f4f4;
+    margin-top: -1px;
+    margin-bottom: 20px;
+}
+
+.orders ul li:last-child {
+    margin-bottom: 0;
+}
+
+.orders li .goods {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 17px 0 14px 12px;
+
+    margin-right: 120px;
+}
+
+.orders li .goods .pic {
+    width: 107px;
+    height: 107px;
+}
+
+.orders .goods .txt {
+    flex: 1;
+    width: 0;
+}
+
+.orders .goods .txt h5 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.orders li .status {
+    width: 120px;
+}
+
+.orders li .pay {
+    width: 200px;
+    border-right: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+}
+
+.orders li .action {
+    width: 180px;
+}
+
+.orders li .common {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.orders .action a:first-child {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #5eb69c;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getRandom(max, min) {
+        return Math.floor(Math.random() * (max - min + 1)) + min
+      }
+      let flag = 0
+      let getNum = getRandom(1, 10)
+      let num = 0
+      while (true) {
+        num = +prompt('请输入数字:')
+        flag++
+        if (num > getNum) {
+          alert('数字猜大了,继续猜')
+        }
+        if (num < getNum) {
+          alert('数字猜小了继续猜')
+        }
+        if (flag >= 8) {
+          alert('你太笨了,这都猜不到!')
+          break
+        }
+        if (num === getNum) {
+          alert('恭喜你,猜对了!')
+          break
+        }
+      }
+    </script>
+  </body>
+</html>

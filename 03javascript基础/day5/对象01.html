@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let goods = {
+        name: '小米10青春版',
+        num: '10000213131',
+        weight: `0.55kg`,
+        address: '中国大陆',
+        sayhi: function () {
+          document.write('hi~~~')
+        },
+        mtv: function (s) {
+          document.write(s)
+        },
+      }
+      /* console.log(goods.name)
+      console.log(goods.num)
+      console.log(goods['weight'])
+      console.log([goods['address']]) */
+      goods.sayhi()
+      goods.mtv('无间道')
+      goods.price = 3999
+      console.log(goods.price)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 30px auto;
+
+        }
+
+        table {
+            /* 表示相邻边框合并在一起 */
+            border-collapse: collapse;
+            margin: 30px auto;
+        }
+
+
+        td,
+        th {
+            /* padding: 15px ; */
+            padding: 15px;
+            /* border: 1px solid #000; */
+            border: 1px solid #000;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <script>
+        // 1、输入price num addrss三个变量
+
+        let price = prompt('请输入价格:')
+        let num = prompt('请输入数量:')
+        let address = prompt('请输入地址:')
+        let total = price * num
+        document.write(`
+    <h2>订单付款信息页面</h2>
+       <table>
+           <tr>
+               <th>商品名称</th>
+               <th>商品价格</th>
+               <th>商品数量</th>
+               <th>总价</th>
+               <th>收货地址</th>
+           </tr>
+           <tr>
+               <td>小米9999</td>
+               <td>${price}</td>
+               <td>${num}</td>
+               <td>${total}</td>
+               <td>${address}</td>
+           </tr>
+       </table>
+`)
+    </script>
+</body>
+
+</html>
